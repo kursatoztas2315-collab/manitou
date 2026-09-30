@@ -1,0 +1,400 @@
+[
+  {
+    "file": "404.html",
+    "route": "/404.html",
+    "indexable": false,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "__SITE_BASE_URL__/#organization",
+          "name": "Anadolu Manitou",
+          "url": "__SITE_BASE_URL__/",
+          "telephone": "+905454017059",
+          "email": "kursatoztas2315@gmail.com",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+905454017059",
+            "contactType": "Kiralama ve teklif",
+            "availableLanguage": "Turkish"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "__SITE_BASE_URL__/#website",
+          "url": "__SITE_BASE_URL__/",
+          "name": "Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "publisher": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "__SITE_BASE_URL__/404.html#webpage",
+          "url": "__SITE_BASE_URL__/404.html",
+          "name": "Sayfa Bulunamadı | Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "isPartOf": {
+            "@id": "__SITE_BASE_URL__/#website"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "file": "index.html",
+    "route": "/",
+    "indexable": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "__SITE_BASE_URL__/#organization",
+          "name": "Anadolu Manitou",
+          "url": "__SITE_BASE_URL__/",
+          "telephone": "+905454017059",
+          "email": "kursatoztas2315@gmail.com",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+905454017059",
+            "contactType": "Kiralama ve teklif",
+            "availableLanguage": "Turkish"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "__SITE_BASE_URL__/#website",
+          "url": "__SITE_BASE_URL__/",
+          "name": "Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "publisher": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "__SITE_BASE_URL__/#webpage",
+          "url": "__SITE_BASE_URL__/",
+          "name": "Malatya Manitou & Telehandler Kiralama | Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "isPartOf": {
+            "@id": "__SITE_BASE_URL__/#website"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "__SITE_BASE_URL__/#service",
+          "name": "Malatya Manitou ve Telehandler Kiralama",
+          "serviceType": "Manitou ve telehandler kiralama",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "provider": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          },
+          "url": "__SITE_BASE_URL__/"
+        }
+      ]
+    }
+  },
+  {
+    "file": "malatya-telehandler-kiralama/index.html",
+    "route": "/malatya-telehandler-kiralama/",
+    "indexable": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "__SITE_BASE_URL__/#organization",
+          "name": "Anadolu Manitou",
+          "url": "__SITE_BASE_URL__/",
+          "telephone": "+905454017059",
+          "email": "kursatoztas2315@gmail.com",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+905454017059",
+            "contactType": "Kiralama ve teklif",
+            "availableLanguage": "Turkish"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "__SITE_BASE_URL__/#website",
+          "url": "__SITE_BASE_URL__/",
+          "name": "Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "publisher": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "__SITE_BASE_URL__/malatya-telehandler-kiralama/#webpage",
+          "url": "__SITE_BASE_URL__/malatya-telehandler-kiralama/",
+          "name": "Malatya Telehandler Kiralama | Teleskopik Yükleyici",
+          "inLanguage": "tr-TR",
+          "isPartOf": {
+            "@id": "__SITE_BASE_URL__/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Ana Sayfa",
+              "item": "__SITE_BASE_URL__/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Malatya Telehandler Kiralama",
+              "item": "__SITE_BASE_URL__/malatya-telehandler-kiralama/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "__SITE_BASE_URL__/malatya-telehandler-kiralama/#service",
+          "name": "Malatya Telehandler Kiralama",
+          "serviceType": "Manitou ve telehandler kiralama",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "provider": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          },
+          "url": "__SITE_BASE_URL__/malatya-telehandler-kiralama/"
+        }
+      ]
+    }
+  },
+  {
+    "file": "malatya-manitou-kiralama/index.html",
+    "route": "/malatya-manitou-kiralama/",
+    "indexable": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "__SITE_BASE_URL__/#organization",
+          "name": "Anadolu Manitou",
+          "url": "__SITE_BASE_URL__/",
+          "telephone": "+905454017059",
+          "email": "kursatoztas2315@gmail.com",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+905454017059",
+            "contactType": "Kiralama ve teklif",
+            "availableLanguage": "Turkish"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "__SITE_BASE_URL__/#website",
+          "url": "__SITE_BASE_URL__/",
+          "name": "Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "publisher": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "__SITE_BASE_URL__/malatya-manitou-kiralama/#webpage",
+          "url": "__SITE_BASE_URL__/malatya-manitou-kiralama/",
+          "name": "Malatya Manitou Kiralama ve Fiyat Teklifi | Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "isPartOf": {
+            "@id": "__SITE_BASE_URL__/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Ana Sayfa",
+              "item": "__SITE_BASE_URL__/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Malatya Manitou Kiralama ve Fiyat Teklifi",
+              "item": "__SITE_BASE_URL__/malatya-manitou-kiralama/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "__SITE_BASE_URL__/malatya-manitou-kiralama/#service",
+          "name": "Malatya Manitou Kiralama",
+          "serviceType": "Manitou ve telehandler kiralama",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "provider": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          },
+          "url": "__SITE_BASE_URL__/malatya-manitou-kiralama/"
+        }
+      ]
+    }
+  },
+  {
+    "file": "gizlilik/index.html",
+    "route": "/gizlilik/",
+    "indexable": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "__SITE_BASE_URL__/#organization",
+          "name": "Anadolu Manitou",
+          "url": "__SITE_BASE_URL__/",
+          "telephone": "+905454017059",
+          "email": "kursatoztas2315@gmail.com",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+905454017059",
+            "contactType": "Kiralama ve teklif",
+            "availableLanguage": "Turkish"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "__SITE_BASE_URL__/#website",
+          "url": "__SITE_BASE_URL__/",
+          "name": "Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "publisher": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "__SITE_BASE_URL__/gizlilik/#webpage",
+          "url": "__SITE_BASE_URL__/gizlilik/",
+          "name": "Gizlilik ve Çerez Bilgisi | Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "isPartOf": {
+            "@id": "__SITE_BASE_URL__/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Ana Sayfa",
+              "item": "__SITE_BASE_URL__/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Gizlilik ve Çerez Bilgisi",
+              "item": "__SITE_BASE_URL__/gizlilik/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "file": "iletisim/index.html",
+    "route": "/iletisim/",
+    "indexable": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "__SITE_BASE_URL__/#organization",
+          "name": "Anadolu Manitou",
+          "url": "__SITE_BASE_URL__/",
+          "telephone": "+905454017059",
+          "email": "kursatoztas2315@gmail.com",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Malatya"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+905454017059",
+            "contactType": "Kiralama ve teklif",
+            "availableLanguage": "Turkish"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "__SITE_BASE_URL__/#website",
+          "url": "__SITE_BASE_URL__/",
+          "name": "Anadolu Manitou",
+          "inLanguage": "tr-TR",
+          "publisher": {
+            "@id": "__SITE_BASE_URL__/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "__SITE_BASE_URL__/iletisim/#webpage",
+          "url": "__SITE_BASE_URL__/iletisim/",
+          "name": "İletişim | Anadolu Manitou Malatya",
+          "inLanguage": "tr-TR",
+          "isPartOf": {
+            "@id": "__SITE_BASE_URL__/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Ana Sayfa",
+              "item": "__SITE_BASE_URL__/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "İletişim",
+              "item": "__SITE_BASE_URL__/iletisim/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
