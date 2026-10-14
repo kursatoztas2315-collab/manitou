@@ -13,6 +13,14 @@ OUT = ROOT / '_site'
 if len(sys.argv) != 2:
     raise SystemExit('Usage: python3 scripts/configure-pages.py https://owner.github.io/repository')
 BASE = sys.argv[1].rstrip('/')
+# If the repository uses a GitHub Pages custom domain, use that host for SEO URLs
+# even if the GitHub Actions base_url output still points to github.io.
+custom_domain_file = ROOT / 'CNAME'
+if custom_domain_file.exists():
+    domain = custom_domain_file.read_text(encoding='utf-8').strip().lower()
+    if not re.fullmatch(r'[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?', domain) or '..' in domain or '/' in domain:
+        raise SystemExit('Invalid CNAME domain.')
+    BASE = 'https://' + domain
 parsed = urlparse(BASE)
 if parsed.scheme != 'https' or not parsed.hostname or parsed.query or parsed.fragment or parsed.username or parsed.password:
     raise SystemExit('GitHub Pages must provide an absolute HTTPS base URL.')
@@ -23,6 +31,12 @@ if OUT.exists():
     shutil.rmtree(OUT)
 OUT.mkdir()
 shutil.copytree(ROOT / 'assets', OUT / 'assets')
+for static_name in ('favicon.ico', 'favicon.svg', 'favicon-48x48.png',
+                    'favicon-192x192.png', 'favicon-512x512.png',
+                    'apple-touch-icon.png', 'site.webmanifest', 'CNAME'):
+    source_asset = ROOT / static_name
+    if source_asset.exists():
+        shutil.copy2(source_asset, OUT / static_name)
 
 def resolve(value):
     if isinstance(value, str):
